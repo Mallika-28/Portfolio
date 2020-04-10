@@ -1,0 +1,215 @@
+.navbar {
+    display: flex;
+    max-width: 1150px;
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;/*To distribute the margin evenly*/
+    justify-content: space-between;
+    /*we told them to distribute even space between 
+    two parents i.e topnav and logo*/
+}
+.topnav {
+    /*display flex is applied only to the first
+    parent */
+    margin: 0;
+    padding: 0;
+    display: flex;/*verticle*/
+    list-style: none;/*no bullets*/
+}
+.topnav .nav-link, a{
+    text-decoration: none;
+    padding: 20px;
+    text-transform: uppercase;
+    color: black;
+    font-size: 20px;
+}
+.logo{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.dropdown{
+    display: none;/*dont display on desktop*/
+}
+
+/*Breakpoint*/
+@media(max-width: 700px){
+    ul.topnav li a.link{
+        display:none;
+    }
+    ul.topnav li.dropdown{
+        display: block;/*shirks->display*/
+        position: absolute;/*to sustain the trigram*/
+        top: 10px;
+        right: 10px;
+    } 
+
+    ul.topnav.responsive li a.link{
+        display: block;
+        line-height: 0.3;
+    }
+
+    ul.topnav.responsive li.dropdown{
+        position: absolute;/*Position of menu icon on top*/
+        top: 10px;
+        right: 15px;
+    }
+    ul.topnav.responsive li{
+        position: relative;/*position of rest of the a tags*/
+        top:35px;
+        right: 30px;
+        text-align: right;
+    }
+    ul.topnav.responsive {
+        flex-direction: column;
+        text-align: right;
+    }
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem;
+    line-height: 0.7;
+}
+
+.header-img img{
+    width: 250px;
+    height: 250px;
+}
+.image_round{
+    border-radius: 50%;
+    width: 100%;/*for super small devices maybe*/
+}
+
+.projects{
+    max-width: 95%;
+    background-color: #f2f2f2;
+    margin: 0 auto;/*center the project section*/
+    display: flex;
+    flex-direction: column;
+}
+.head{
+    text-align: center;
+    padding: 1rem;/*top padding*/
+}
+.container{
+    display: flex;
+    justify-content: space-around;/*between media objects*/
+    flex-direction: row;
+}
+.img{
+    padding: 5px; 
+    height: 300px; 
+    width: 370px;
+}
+.image-sec, .desc{
+    display: flex;
+}
+.image-sec{
+    cursor: pointer;
+}
+.image-sec:hover{
+    /* opacity: 0.7; */
+    transition: 0.7s ease-in-out;
+    transform: scale(1.1);
+}
+.desc{
+    display:flex;
+    flex-direction: column;
+    padding-left: 18px;/*text padding*/
+    line-height: 0.2;
+}
+.media-objects{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-around;
+}
+.button-wrapper{
+    display: flex;
+    justify-content: center;/*to center the button*/
+    padding: 1rem;
+}
+.style-button{
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    background-color: black;
+}
+.style-button {
+    font-size: 18px;
+    position: relative;
+    height: 25px;
+    transition: all 0.7s;
+    color: white;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,.5);/*x axis y axis and box shadow*/
+}
+.style-button:hover {
+    cursor: pointer;
+    transition: all 0.7s;
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.style-me{
+    width: 70%;
+}
+
+@media(max-width:1150px){
+    .style-me{
+        width: 70%;
+    }
+    .projects{
+        background-color: white;
+    }
+    .img{
+        justify-content: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .image-sec, .desc{
+        justify-content: center;
+    }
+    .image-sec:hover{
+        transition: 0.7s ease-in-out;
+        transform: scale(1.04);
+    }
+}
+
+.skills, .light{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.skills{
+    height: 100%;
+    padding: 10rem 0 12rem;
+    line-height: 0.7;
+}
+.skills-text, .dark{
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.dark{
+    line-height :0.5;
+}
+.light{
+    background-color: #f2f2f2;
+}
+.dark-section{
+    background-color: #a6a6a6;
+    height: 50px;
+}
+
+@media(max-width:500px){
+    .skills-text{
+        line-height: 1.3;
+    }
+}
