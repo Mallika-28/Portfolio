@@ -1,4 +1,105 @@
+<!DOCTYPE html>
 <html>
-  <body>
-  </body>
+<head>
+<link rel="stylesheet" href="flex.css">
+</head>
+<body>
+    <!--Navigation bar-->
+    <nav class="navbar"> 
+        <div class="logo">Portfolio</div>
+        <ul class="topnav responsive" id="navtoggle">
+            <li><a class="link" href="#">Home</a></li>
+            <li><a class="link" href="#">About</a></li>
+            <li><a class="link" href="#">Projects</a></li>
+            <li><a class="link" href="#">Contact</a></li>
+            <li class="dropdown"><a onclick="toggleDrop()" href="javascript:void(0)">&#9776</a></li>
+        </ul>
+    </nav>
+    <!--Navigation ends-->
+
+    <!--Header-->
+    <header>
+        <div class="header-img">
+            <img class="image_round" src="me duh.jpeg" alt="">
+            <h1>Mallika Punj</h1>
+            <h2>Web developer</h2>
+            <p>So much to do, do little is done</p>
+        </div>
+    </header>
+    <!--Header ends-->
+    <hr class="style-me">
+    <br>
+
+    <!--Project section-->
+    <div class="projects" style="max-width: 95%;">
+        <div class="head"><h1>Projects</h1></div>
+        <div class="container">
+            <div class="media-objects obj1">
+                <div class="image-sec">
+                    <img class="img" src="screenshot (137).png" alt="">
+                </div>
+                <div class="desc">
+                    <h2> Project 1</h2>
+                    <p>Based on bootstrap, this is a website for restaurants!</p>
+                </div>
+            </div>
+            <div class="media-objects obj2">
+                <div class="image-sec">
+                    <img class="img" src="screenshot (138).png" alt="">
+                </div>
+                <div class="desc">
+                    <h2> Project 2</h2>
+                    <p>An online shopping website!</p>
+                </div>
+            </div>
+            <div class="media-objects obj3">
+                <div class="image-sec">
+                    <img class="img" src="ss ttt.jpg" alt="">
+                </div>
+                <div class="desc">
+                    <h2> Project 3</h2>
+                    <p>C++ based tick cross game!</p>
+                </div>
+            </div>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://github.com/Mallika-28?tab=repositories"><div class="style-button">Other projects</div></a>
+        </div>
+    </div>
+    <!--Project section ends here-->
+
+    <!--skills-->
+    <div class="skills">
+        <div class="heading">
+            <h1>Skills</h1>
+        </div>
+        <div class="skills-text">
+            <p>HTML, CSS, JAVASCRIPT, BOOTSTRAP, C, C++</p>
+        </div>
+    </div>
+    <!--skills section ends here-->
+
+    <!--Footer section-->
+    <footer>
+        <div class="light">
+            <h1>CONTACT</h1>
+            <div class="dark">
+                <p>cu.18bcs2022@gmail.com</p>
+                <p>8171868627</p>
+            </div>
+        </div>
+        <div class="dark-section">
+        </div>
+    </footer>
+    <!--footer ends here-->
+
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+</body>
 </html>
