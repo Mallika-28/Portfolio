@@ -78,6 +78,7 @@ header{
     height: 250px;
 }
 .image_round{
+    background-color: #f2f2f2;
     border-radius: 50%;
     width: 100%;/*for super small devices maybe*/
 }
